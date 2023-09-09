@@ -28,7 +28,7 @@ export default function Home() {
           <section className='l-section'>
             <div className='l-text c-text'>
               <p className='u-margin--none'>
-                I'm <span className='u-font--shenttpuro u-color--white'>Pedro Catunda</span> , a
+                I&apos;m <span className='u-font--shenttpuro u-color--white'>Pedro Catunda</span> , a
                 <span className='u-wrap--none'> Computer Science student </span>
               </p> 
               <p>
