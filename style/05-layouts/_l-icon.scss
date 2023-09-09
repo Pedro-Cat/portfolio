@@ -1,0 +1,11 @@
+.l-icon {
+    position: relative;
+    display: flex;
+    width: var(--medium-icon-measure);
+    height: var(--medium-icon-measure);
+
+    &--small {
+        width: var(--small-icon-measure);
+        height: var(--small-icon-measure);
+    }
+}

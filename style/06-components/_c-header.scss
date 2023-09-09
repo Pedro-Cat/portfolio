@@ -1,0 +1,10 @@
+@use '../01-settings/breakpoint';
+
+.c-header {
+    // background-color: var(--color-primary);
+    background-color: transparent;
+
+    @include breakpoint.breakpoint(small-only){
+        background-color: var(--color-primary);
+    }
+}

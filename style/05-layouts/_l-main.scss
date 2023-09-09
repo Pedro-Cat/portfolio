@@ -1,0 +1,23 @@
+.l-main {
+    grid-area: main;
+    // background-color: white;
+    // background-color: #846f42;
+    // background-color: #5a3923;
+    // background-color: #6d3d1d;
+    // background-color: #774f34;
+    background-color: rgb(11, 11, 11);
+
+    // position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+    // padding-top: var(--header-height);
+
+    &__container {
+        position: relative;
+        display: flex;
+        width: 100%;
+        max-width: var(--global-max-width);
+    }
+}

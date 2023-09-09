@@ -1,0 +1,30 @@
+.l-noise {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: var(--z-index-overlay);
+
+    animation: noise 1s steps(1) infinite;
+    pointer-events: none;
+}
+
+@keyframes noise {
+    0%, 100% {
+        background-image: url('../../public/noise1.png');
+    }
+    16% {
+        background-image: url('../../public/noise2.png');
+    }
+    32% {
+        background-image: url('../../public/noise3.png');
+    }
+    48% {
+        background-image: url('../../public/noise4.png');
+    }
+    64% {
+        background-image: url('../../public/noise5.png');
+    }
+    80% {
+        background-image: url('../../public/noise6.png');
+    }
+}

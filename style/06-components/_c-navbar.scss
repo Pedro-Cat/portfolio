@@ -1,0 +1,15 @@
+.c-navbar{
+
+    &__option {
+        font-family: 'JapaneseBrush', serif;
+        color: white;
+        opacity: 0.7;
+        cursor: pointer;
+        
+        &:hover {
+            color: white;
+            scale: 1.05;
+            opacity: 1;
+        }
+    }
+}

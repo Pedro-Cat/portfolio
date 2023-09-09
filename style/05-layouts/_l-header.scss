@@ -1,0 +1,30 @@
+@use '../01-settings/breakpoint';
+
+.l-header {
+    grid-area: header;
+    
+    // display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+
+    // @include breakpoint.breakpoint(medium-up) {
+    //     grid-template-columns: var(--global-max-width);
+    //     justify-content: center;
+    // }
+
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: var(--header-height);
+    z-index: var(--z-index-modal);
+    padding: 0 var(--global-padding-x);
+
+    &__container {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: var(--global-max-width);
+    }
+}

@@ -1,0 +1,19 @@
+@use '../01-settings/breakpoint';
+
+.l-navbar {
+    position: relative;
+    display: flex;
+    height: 90%;
+    gap: 8px;
+
+    &__option {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 4px 8px 2px 8px;
+
+        @include breakpoint.breakpoint(small-only) {
+            padding: 8px 8px 2px 8px;
+        }
+    }
+}

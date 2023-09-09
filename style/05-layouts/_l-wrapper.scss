@@ -1,0 +1,17 @@
+.l-wrapper {
+    // display: grid;
+    // grid-template-areas: 
+    //     "header header header"
+    //     ".      main   .     "
+    //     "footer footer footer"
+    // ;
+    // grid-template-columns: 0 1fr 0;
+
+    // @include breakpoint.breakpoint(medium-up){
+    //     grid-template-columns: 1fr var(--global-max-width) 1fr;
+    // }
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
