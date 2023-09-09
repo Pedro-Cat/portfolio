@@ -1,0 +1,6 @@
+.u-gradient {
+
+    &--bottom {
+        -webkit-mask-image: linear-gradient(to top, transparent 1%, black 30%) !important;
+    }
+}

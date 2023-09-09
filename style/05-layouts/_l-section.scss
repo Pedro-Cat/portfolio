@@ -1,0 +1,14 @@
+@use '../01-settings/breakpoint';
+
+.l-section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 100vh;
+
+    @include breakpoint.breakpoint(small-only) {
+        flex-direction: column;
+    }
+}

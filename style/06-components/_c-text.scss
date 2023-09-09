@@ -1,14 +1,6 @@
 @use '../01-settings/breakpoint';
 
 .c-text {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    width: 100%;
-
     font-family: 'JapaneseBrush';
 
     @include breakpoint.breakpoint(medium-down) {

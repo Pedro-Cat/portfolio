@@ -7,7 +7,7 @@
     // background-color: #774f34;
     background-color: rgb(11, 11, 11);
 
-    // position: relative;
+    position: relative;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -17,6 +17,7 @@
     &__container {
         position: relative;
         display: flex;
+        flex-direction: column;
         width: 100%;
         max-width: var(--global-max-width);
     }

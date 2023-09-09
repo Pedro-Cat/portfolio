@@ -25,19 +25,26 @@ export default function Home() {
 
       <main className='l-main'>
         <div className='l-main__container'>
-          <div className='l-card'>
-            <div className='c-text'>
-              <p>
-                I'm <span className='u-font--shenttpuro u-color--white'>Pedro Catunda</span> , a Computer Science student
+          <section className='l-section'>
+            <div className='l-text c-text'>
+              <p className='u-margin--none'>
+                I'm <span className='u-font--shenttpuro u-color--white'>Pedro Catunda</span> , a
+                <span className='u-wrap--none'> Computer Science student </span>
               </p> 
               <p>
                 and a KENSHI!
               </p>
             </div>
             <div className='l-img c-img'>
-              <Image src={'/myself.JPG'} fill alt='myself' />
+              <Image src={'/myself.JPG'} fill alt='myself' className='u-gradient--bottom' />
             </div>
-          </div>
+          </section>
+
+          <section className='l-section'>
+            <div className='l-text c-text'>
+              <span className='u-color--white u-font--bigger'>Check out my valuable fights!</span>
+            </div>
+          </section>
         </div>
       </main>
 
