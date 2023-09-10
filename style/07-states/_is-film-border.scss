@@ -1,0 +1,84 @@
+.is-film-border {
+    background-color: black;
+    height: 70px;
+    animation: put-black-box-top 3s 1;
+    .c-icon {
+        position: relative;
+        visibility: visible;
+    }
+
+    &--no {
+        animation: remove-black-box-top 1s 1;
+        .c-icon {
+            position: absolute;
+            visibility: hidden;
+        }
+    }
+
+    &__trigger {
+        position: absolute;
+        z-index: var(--z-index-below);
+        visibility: hidden;
+    }
+
+    &__bottom {
+        position: fixed;
+        width: 100%;
+        height: 70px;
+        bottom: 0;
+
+        .is-film-border__bottom.is-film-border {
+            animation: put-black-box-bottom 3s 1;
+
+            &--no {
+                animation: remove-black-box-bottom 1s 1;
+            }
+        }
+    }
+}
+
+@keyframes put-black-box-top {
+    from {
+        background-color: transparent;
+        height: var(--header-height);
+    }
+
+    to {
+        background-color: black;
+        height: 70px;
+    }
+}
+
+@keyframes remove-black-box-top {
+    from {
+        background-color: black;
+        height: 70px;
+    }
+
+    to {
+        background-color: transparent;
+        height: var(--header-height);
+    }
+}
+
+@keyframes put-black-box-bottom {
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: black;
+        height: 70px;
+    }
+}
+
+@keyframes remove-black-box-bottom {
+    from {
+        background-color: black;
+        height: 70px;
+    }
+
+    to {
+        background-color: transparent;
+    }
+}

@@ -1,6 +1,7 @@
 import '../style/index.scss'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,6 +19,7 @@ export default function RootLayout({
     <html lang="en">
       {/* add no futuro? */}
       {/* <Script src='../vendor/cut.js' strategy='lazyOnload' /> */}
+      <Script src='../vendor/scroll.js' strategy='lazyOnload' />
       <body className='l-wrapper c-wrapper'>{children}</body>
       
     </html>

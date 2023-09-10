@@ -1,0 +1,74 @@
+.is-glitch {
+    &ed {
+        animation: glitched 0.5s steps(1) 1;
+    }
+
+    &ing {
+        animation: glitching 0.2s steps(2) infinite;
+    }
+}
+
+@keyframes glitching {
+    from {
+        transform: translate(0, 0);
+    }
+    to {
+        transform: translate(-1px, -1px);
+    }
+}
+
+// Fazer mais duas variações do glitched
+
+@keyframes glitched {
+    0% {
+        transform: translate(0, 0);
+    }
+    5% {
+        transform: translate(2px, 2px);
+    }
+    10% {
+        transform: translate(1px, 1px);
+    }
+    15% {
+        transform: translate(3px, 3px);
+    }
+    20% {
+        transform: translate(2px, 2px);
+    }
+    25% {
+        transform: translate(4px, 4px);
+    }
+    30% {
+        transform: translate(3px, 3px);
+    }
+    35% {
+        transform: translate(5px, 5px);
+    }
+    40% {
+        transform: translate(3px, 4px);
+    }
+    45% {
+        transform: translate(4px, 6px);
+    }
+    50% {
+        transform: translate(2px, 5px);
+    }
+    60% {
+        transform: translate(3px, 7px);
+    }
+    70% {
+        transform: translate(1px, 6px);
+    }
+    80% {
+        transform: translate(1px, 13px);
+    }
+    90% {
+        transform: translate(0, 12px);
+    }
+    99% {
+        transform: translate(-1px, 11px);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
