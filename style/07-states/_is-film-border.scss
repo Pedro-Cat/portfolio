@@ -2,17 +2,17 @@
     background-color: black;
     height: 70px;
     animation: put-black-box-top 3s 1;
-    .c-icon {
-        position: relative;
-        visibility: visible;
-    }
+    // .c-icon {
+    //     position: relative;
+    //     visibility: visible;
+    // }
 
     &--no {
         animation: remove-black-box-top 1s 1;
-        .c-icon {
-            position: absolute;
-            visibility: hidden;
-        }
+        // .c-icon {
+        //     position: absolute;
+        //     visibility: hidden;
+        // }
     }
 
     &__trigger {

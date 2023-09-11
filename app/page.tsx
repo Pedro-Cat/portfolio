@@ -9,8 +9,6 @@ export default function Home() {
 
       <header className='l-header c-header'>
         <div className='l-header__container'>
-          {/* sobe para o inicio */}
-          <Rewind className='l-icon c-icon'></Rewind>
           <div className='l-navbar'>
             {/* manda para projects */}
             <div className='l-navbar__option c-navbar__option'>
@@ -20,6 +18,11 @@ export default function Home() {
             <div className='l-navbar__option c-navbar__option'>
               Contact
             </div>
+          </div>
+          {/* sobe para o inicio */}
+          {/* <Rewind className='l-icon c-icon'></Rewind> */}
+          <div className='l-navbar__option c-icon u-font--bigger'>
+            &lt;&lt;
           </div>
         </div>
       </header>
@@ -37,7 +40,7 @@ export default function Home() {
                   and a KENSHI!
                 </p>
               </div>
-              <div className='l-img c-img'>
+              <div className='l-img l-img--portrait c-img--portrait'>
                 <Image src={'/myself.JPG'} fill alt='myself' className='u-gradient--bottom' />
               </div>
             </section>
@@ -45,14 +48,31 @@ export default function Home() {
             <section className='l-section'>
               <div className='l-text c-text'>
                 <span className='u-color--white u-font--bigger'>Check out my valuable fights!</span>
+                <div className='l-img l-img--arrow c-img--arrow'>
+                  <Image src={'/japanese-arrow2.png'} fill alt='arrow' />
+                </div>
               </div>
             </section>
 
-            <section className='l-section'>
-              <div className='l-text c-text'>
-                <span className='u-color--white u-font--bigger'>Check out my valuable fights!</span>
+            <section className='l-section l-section--background c-img--background-invert'>
+              <Image src={'/kendo-fight-hd.png'} fill alt='bg' className='u-gradient--top-bottom' />
+            </section>
+
+            <section className='l-section l-section--content'>
+              <div className='l-section__content'>
+                <div className='l-section__title'>
+                  Academic Papers
+                </div>
+                <div className='l-section__project'>
+                  Project
+                </div>
               </div>
             </section>
+
+            {/* <section className='l-section l-section--background c-img--background-gray'>
+              <Image src={'/blossom-background.png'} fill alt='bg' className='u-gradient--top-bottom' />
+            </section> */}
+
             <section className='l-section'>
               <div className='l-text c-text'>
                 <span className='u-color--white u-font--bigger'>Check out my valuable fights!</span>

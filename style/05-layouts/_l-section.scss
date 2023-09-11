@@ -11,4 +11,15 @@
     @include breakpoint.breakpoint(small-only) {
         flex-direction: column;
     }
+
+    &--background {
+        @include breakpoint.breakpoint(small-only) {
+            min-height: 50vh;
+        }
+    }
+
+    &--content {
+        min-height: auto;
+        height: auto;
+    }
 }

@@ -1,0 +1,29 @@
+.is-visible {
+    visibility: visible;
+    opacity: 0.7;
+    animation: hidden-visible 3s 1;
+
+    &--no {
+        opacity: 0;
+        animation: visible-hidden 1s 1;
+        pointer-events: none;
+    }
+}
+
+@keyframes hidden-visible {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.7;
+    }
+}
+@keyframes visible-hidden {
+    from {
+        opacity: 0.7;
+    }
+    
+    to {
+        opacity: 0;
+    }
+}

@@ -28,8 +28,10 @@ const o = new IntersectionObserver(entries => {
         if (entry.isIntersecting) {
             document.querySelector('.c-header').classList.add('is-film-border--no');
             document.querySelector('.is-film-border__bottom').classList.add('is-film-border--no');
+            document.querySelector('.c-icon').classList.add('is-visible--no');
             document.querySelector('.c-header').classList.remove('is-film-border');
             document.querySelector('.is-film-border__bottom').classList.remove('is-film-border');
+            document.querySelector('.c-icon').classList.remove('is-visible');
 
             return; // if we added the class, exit the function
         }
@@ -37,8 +39,10 @@ const o = new IntersectionObserver(entries => {
         // We're not intersecting, so remove the class!
         document.querySelector('.c-header').classList.remove('is-film-border--no');
         document.querySelector('.is-film-border__bottom').classList.remove('is-film-border--no');
+        document.querySelector('.c-icon').classList.remove('is-visible--no');
         document.querySelector('.c-header').classList.add('is-film-border');
         document.querySelector('.is-film-border__bottom').classList.add('is-film-border');
+        document.querySelector('.c-icon').classList.add('is-visible');
     });
 });
 

@@ -3,4 +3,9 @@
     &--bottom {
         -webkit-mask-image: linear-gradient(to top, transparent 1%, black 30%) !important;
     }
+
+    &--top-bottom {
+        -webkit-mask-image:
+            linear-gradient(to top, transparent 5%, black 50%, black 50%, transparent 95%) !important;
+    }
 }
