@@ -1,5 +1,6 @@
 import Image from 'next/image'
-import { Rewind } from 'lucide-react'
+import Link from 'next/link'
+import { Github, Linkedin, Rewind } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -10,27 +11,23 @@ export default function Home() {
       <header className='l-header c-header'>
         <div className='l-header__container'>
           <div className='l-navbar'>
-            {/* manda para projects */}
-            <div className='l-navbar__option c-navbar__option'>
+            <Link href={'#projects'} className='l-navbar__option c-navbar__option'>
               Projects
-            </div>
-            {/* manda para contact */}
-            <div className='l-navbar__option c-navbar__option'>
+            </Link>
+            <Link href={'#contact'} className='l-navbar__option c-navbar__option'>
               Contact
-            </div>
+            </Link>
           </div>
-          {/* sobe para o inicio */}
-          {/* <Rewind className='l-icon c-icon'></Rewind> */}
-          <div className='l-navbar__option c-icon u-font--bigger'>
+          <Link href={'#home'} className='l-navbar__option c-icon u-font--bigger'>
             &lt;&lt;
-          </div>
+          </Link>
         </div>
       </header>
 
       <div className='l-glitch-area'>
         <main className='l-main'>
           <div className='l-main__container is-glitching'>
-            <section className='l-section'>
+            <section id='home' className='l-section'>
               <div className='l-text c-text'>
                 <p className='u-margin--none'>
                   I&apos;m <span className='u-font--shenttpuro u-color--white'>Pedro Catunda</span> , a
@@ -39,9 +36,17 @@ export default function Home() {
                 <p>
                   and a KENSHI!
                 </p>
+                <div className='u-gap u-gap--large'>
+                  <Link href={'https://github.com/Pedro-Cat'} target='_blank'>
+                    <Github className='u-color--white u-hover--scale' />
+                  </Link>
+                  <Link href={'https://www.linkedin.com/in/pedro-catunda-019a3b249/'} target='_blank'>
+                    <Linkedin className='u-color--white u-hover--scale' />
+                  </Link>
+                </div>
               </div>
               <div className='l-img l-img--portrait c-img--portrait'>
-                <Image src={'/myself.JPG'} fill alt='myself' className='u-gradient--bottom' />
+                <Image src={'/myself.JPG'} fill alt='myself' className='u-gradient--top-bottom-lite' />
               </div>
             </section>
 
@@ -58,7 +63,7 @@ export default function Home() {
               <Image src={'/kendo-fight-hd.png'} fill alt='bg' className='u-gradient--top-bottom' />
             </section>
 
-            <section className='l-section l-section--content'>
+            <section id='projects' className='l-section l-section--content'>
               <div className='l-section__content'>
                 <div className='l-section__title'>
                   Academic Papers
@@ -73,7 +78,7 @@ export default function Home() {
               <Image src={'/blossom-background.png'} fill alt='bg' className='u-gradient--top-bottom' />
             </section> */}
 
-            <section className='l-section'>
+            <section id='contact' className='l-section'>
               <div className='l-text c-text'>
                 <span className='u-color--white u-font--bigger'>Check out my valuable fights!</span>
               </div>

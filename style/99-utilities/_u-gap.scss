@@ -1,0 +1,8 @@
+.u-gap {
+    display: flex;
+    gap: 4px;
+
+    &--large {
+        gap: 40px;
+    }
+}
