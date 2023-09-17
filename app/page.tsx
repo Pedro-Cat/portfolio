@@ -73,7 +73,7 @@ export default function Home() {
                     <Image src={'/cnn-meters-project.png'} fill alt='image' className='u-gradient--top-bottom' />
                   </div>
                   <div className="l-section__info">
-                    <div className="l-section__title c-section__title c-section__title u-font--small">
+                    <div className="l-section__title c-section__title u-font--small">
                       CEGAS-AMR: A Dataset and Application for Automatic Gas Meter Reading using CNN
                     </div>
                   </div>
@@ -88,15 +88,15 @@ export default function Home() {
                     <Image src={'/placeholder.jpg'} fill alt='placeholder' className='u-gradient--top-bottom' />
                   </div>
                   <div className="l-section__info">
-                    <div className="l-section__title c-section__title c-section__title u-font--small">
-                      Project-MGL - Coming Soon
+                    <div className="l-section__title c-section__title u-font--small">
+                      Project-MGL <br /> - Coming Soon -
                     </div>
                   </div>
                 </div>
               </div>
             </section>
 
-            {/* <section className='l-section l-section--background c-img--background-gray'>
+            {/* <section className='l-section l-section--background c-img c-img--background-gray'>
               <Image src={'/blossom-background.png'} fill alt='bg' className='u-gradient--top-bottom' />
             </section> */}
 
@@ -106,6 +106,16 @@ export default function Home() {
                 <div className='l-img l-img--arrow c-img c-img--arrow'>
                   <Image src={'/japanese-arrow2.png'} fill alt='arrow' />
                 </div>
+              </div>
+            </section>
+
+            <section className='l-section l-section--background c-img c-img--background-gray u-width-90p'>
+              <Image src={'/village-paintbrush.jpg'} fill alt='bg' className='u-gradient--top-bottom' />
+            </section>
+
+            <section id='contact' className='l-section'>
+              <div className='l-text c-text'>
+                <span className='u-color--white u-font--bigger'>The End?</span>
               </div>
             </section>
           </div>

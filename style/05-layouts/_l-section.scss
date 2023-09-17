@@ -23,6 +23,10 @@
     &--content {
         min-height: auto;
         height: auto;
+
+        @include breakpoint.breakpoint(small-only) {
+            margin-top: 12vh;
+        }
     }
 
     &__content {
@@ -36,7 +40,8 @@
 
     &__title {
         display: flex;
-        width: auto;
+        width: 80%;
+        // width: auto;
         text-align: center;
     }
 
