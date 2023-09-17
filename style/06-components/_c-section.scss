@@ -1,0 +1,22 @@
+.c-section {
+
+    &__title {
+        font-family: 'JapaneseBrush';
+        color: white;
+    }
+
+    &__project {
+        font-family: 'JapaneseBrush';
+        opacity: 0.7;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 1;
+            scale: 1.05;
+
+            .c-img--background-gray {
+                filter: none;
+            }
+        }
+    }
+}

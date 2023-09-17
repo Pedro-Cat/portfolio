@@ -45,7 +45,7 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <div className='l-img l-img--portrait c-img--portrait'>
+              <div className='l-img l-img--portrait c-img c-img--portrait'>
                 <Image src={'/myself.JPG'} fill alt='myself' className='u-gradient--top-bottom-lite' />
               </div>
             </section>
@@ -53,23 +53,45 @@ export default function Home() {
             <section className='l-section'>
               <div className='l-text c-text'>
                 <span className='u-color--white u-font--bigger'>Check out my valuable fights!</span>
-                <div className='l-img l-img--arrow c-img--arrow'>
+                <div className='l-img l-img--arrow c-img c-img--arrow'>
                   <Image src={'/japanese-arrow2.png'} fill alt='arrow' />
                 </div>
               </div>
             </section>
 
-            <section className='l-section l-section--background c-img--background-invert'>
+            <section className='l-section l-section--background c-img c-img--background-invert'>
               <Image src={'/kendo-fight-hd.png'} fill alt='bg' className='u-gradient--top-bottom' />
             </section>
 
             <section id='projects' className='l-section l-section--content'>
               <div className='l-section__content'>
-                <div className='l-section__title'>
-                  Academic Papers
+                <div className='l-section__title c-section__title'>
+                  Academic Papers:
                 </div>
-                <div className='l-section__project'>
-                  Project
+                <div className='l-section__project c-section__project'>
+                  <div className='l-section__image c-img c-img--background-gray'>
+                    <Image src={'/cnn-meters-project.png'} fill alt='image' className='u-gradient--top-bottom' />
+                  </div>
+                  <div className="l-section__info">
+                    <div className="l-section__title c-section__title c-section__title u-font--small">
+                      CEGAS-AMR: A Dataset and Application for Automatic Gas Meter Reading using CNN
+                    </div>
+                  </div>
+                </div>
+
+                <div className='l-section__title c-section__title'>
+                  Personal Projects:
+                </div>
+                <div />
+                <div className='l-section__project c-section__project u-cursor-default'>
+                  <div className='l-section__image c-img c-img--background-gray'>
+                    <Image src={'/placeholder.jpg'} fill alt='placeholder' className='u-gradient--top-bottom' />
+                  </div>
+                  <div className="l-section__info">
+                    <div className="l-section__title c-section__title c-section__title u-font--small">
+                      Project-MGL - Coming Soon
+                    </div>
+                  </div>
                 </div>
               </div>
             </section>
@@ -80,7 +102,10 @@ export default function Home() {
 
             <section id='contact' className='l-section'>
               <div className='l-text c-text'>
-                <span className='u-color--white u-font--bigger'>Check out my valuable fights!</span>
+                <span className='u-color--white u-font--bigger'>Contact me!</span>
+                <div className='l-img l-img--arrow c-img c-img--arrow'>
+                  <Image src={'/japanese-arrow2.png'} fill alt='arrow' />
+                </div>
               </div>
             </section>
           </div>

@@ -1,11 +1,11 @@
 .c-img {
+    -webkit-mask-image: linear-gradient(to right, transparent 1%, black 20%, black 80%, transparent 99%);
     
     &--portrait {
-        -webkit-mask-image: linear-gradient(to right, transparent 1%, black 20%, black 80%, transparent 99%);
         filter: grayscale(100%);
     
         &:hover {
-            filter: none;
+            filter: initial;
         }
     }
 
@@ -15,12 +15,10 @@
     }
 
     &--background-invert {
-        -webkit-mask-image: linear-gradient(to right, transparent 1%, black 20%, black 90%, transparent 99%);
         filter: invert(1);
     }
 
     &--background-gray {
-        -webkit-mask-image: linear-gradient(to right, transparent 1%, black 20%, black 90%, transparent 99%);
         filter: grayscale(100%);
     }
 }
