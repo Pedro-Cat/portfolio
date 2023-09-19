@@ -89,7 +89,7 @@ export default function Home() {
                     <Image src={'/placeholder.jpg'} fill alt='placeholder' className='u-gradient--top-bottom' />
                   </div>
                   <div className="l-section__info">
-                    <div className="l-section__title c-section__title u-font--small">
+                    <div className="l-section__title c-section__title u-font--small u-width-auto">
                       Project-MGL <br /> - Coming Soon -
                     </div>
                   </div>
