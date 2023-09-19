@@ -22,7 +22,7 @@ document.querySelectorAll('.l-section').forEach((i) => {
 
 // To the trigger
 
-const o = new IntersectionObserver(entries => {
+const obs = new IntersectionObserver(entries => {
     entries.forEach(entry => {
 
         if (entry.isIntersecting) {
@@ -46,4 +46,23 @@ const o = new IntersectionObserver(entries => {
     });
 });
 
-o.observe(document.querySelector('.is-film-border__trigger'));
+obs.observe(document.querySelector('.is-film-border__trigger'));
+
+// To the projects
+
+const o = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+
+        if (entry.isIntersecting) {
+            document.getElementById('projects').classList.remove('is-hidden');
+            document.getElementById('projects').classList.add('is-hidden-no');
+
+            return; // if we added the class, exit the function
+        }
+
+        document.getElementById('projects').classList.remove('is-hidden-no');
+        document.getElementById('projects').classList.add('is-hidden');
+    });
+});
+
+o.observe(document.getElementById('projects'));

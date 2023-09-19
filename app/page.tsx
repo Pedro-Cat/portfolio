@@ -1,7 +1,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Github, Linkedin, Rewind } from 'lucide-react'
-import { myFunction, outFunc } from './copy'
+import { copyClick, copyOut } from './copy'
 
 export default function Home() {
   return (
@@ -109,7 +109,7 @@ export default function Home() {
                   <Image src={'/japanese-arrow2.png'} fill alt='arrow' />
                 </div>
                 <div className='l-contact'>
-                  <div className='l-email c-email' onClick={myFunction} onMouseOut={outFunc}>
+                  <div className='l-email c-email' onClick={copyClick} onMouseOut={copyOut}>
                     pcatundarocha@gmail.com
                     <div className='l-email__tag c-email__tag'>
                       Loading JS...

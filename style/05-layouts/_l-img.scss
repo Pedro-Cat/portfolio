@@ -31,5 +31,9 @@
         min-height: 100px;
         width: 30px;
         height: 100px;
+
+        @include breakpoint.breakpoint(small-only) {
+            left: 46%;
+        }
     }
 }
