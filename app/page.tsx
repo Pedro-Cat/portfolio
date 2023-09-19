@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { Github, Linkedin, Rewind } from 'lucide-react'
+import { myFunction, outFunc } from './copy'
 
 export default function Home() {
   return (
     <body className='l-wrapper c-wrapper'>
-      <div className='l-noise'></div>
-      <div className='is-film-border__trigger'></div>
+      <div className='l-noise' />
+      <div className='is-film-border__trigger' />
 
       <header className='l-header c-header'>
         <div className='l-header__container'>
@@ -50,6 +51,10 @@ export default function Home() {
               </div>
             </section>
 
+            <section className='l-section l-section--background c-img c-img--background-invert'>
+              <Image src={'/kendo-fight-hd.png'} fill alt='bg' className='u-gradient--top-bottom' />
+            </section>
+
             <section className='l-section'>
               <div className='l-text c-text'>
                 <span className='u-color--white u-font--bigger'>Check out my valuable fights!</span>
@@ -57,10 +62,6 @@ export default function Home() {
                   <Image src={'/japanese-arrow2.png'} fill alt='arrow' />
                 </div>
               </div>
-            </section>
-
-            <section className='l-section l-section--background c-img c-img--background-invert'>
-              <Image src={'/kendo-fight-hd.png'} fill alt='bg' className='u-gradient--top-bottom' />
             </section>
 
             <section id='projects' className='l-section l-section--content'>
@@ -100,17 +101,35 @@ export default function Home() {
               <Image src={'/blossom-background.png'} fill alt='bg' className='u-gradient--top-bottom' />
             </section> */}
 
-            <section id='contact' className='l-section'>
+            <section className='l-section'>
+              <div id='contact' className='l-contact__anchor' />
               <div className='l-text c-text'>
                 <span className='u-color--white u-font--bigger'>Contact me!</span>
                 <div className='l-img l-img--arrow c-img c-img--arrow'>
                   <Image src={'/japanese-arrow2.png'} fill alt='arrow' />
                 </div>
+                <div className='l-contact'>
+                  <div className='l-email c-email' onClick={myFunction} onMouseOut={outFunc}>
+                    pcatundarocha@gmail.com
+                    <div className='l-email__tag c-email__tag'>
+                      Loading JS...
+                    </div>
+                  </div>
+                  <div className='u-gap u-gap--large'>
+                    <Link href={'https://www.linkedin.com/in/pedro-catunda-019a3b249/'} target='_blank'>
+                      <Linkedin className='u-color--white u-hover--scale' />
+                    </Link>
+                  </div>
+                </div>
               </div>
             </section>
 
-            <section className='l-section l-section--background c-img c-img--background-gray u-width-90p'>
+            <section className='l-section l-section--background c-img c-img--background-gray u-width-90p u-mobile-disapear'>
               <Image src={'/village-paintbrush.jpg'} fill alt='bg' className='u-gradient--top-bottom' />
+            </section>
+
+            <section className='l-section l-section--background c-img c-img--background-gray u-height-100vh u-mobile-only'>
+              <Image src={'/mountain3.jpg'} fill alt='bg' className='u-gradient--top-bottom' />
             </section>
 
             <section id='contact' className='l-section'>

@@ -13,6 +13,7 @@
     }
 
     &--background {
+        margin-top: 40vh;
         width: 70%;
         @include breakpoint.breakpoint(small-only) {
             width: 100%;
@@ -24,9 +25,9 @@
         min-height: auto;
         height: auto;
 
-        @include breakpoint.breakpoint(small-only) {
-            margin-top: 12vh;
-        }
+        // @include breakpoint.breakpoint(small-only) {
+        //     margin-top: 12vh;
+        // }
     }
 
     &__content {

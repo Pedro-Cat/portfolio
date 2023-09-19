@@ -1,0 +1,28 @@
+@use '../01-settings/breakpoint';
+
+.u-mobile {
+
+    &-only {
+        position: absolute;
+        visibility: hidden;
+        pointer-events: none;
+
+        @include breakpoint.breakpoint(small-only) {
+            position: initial;
+            visibility: visible;
+            pointer-events: all;
+        }
+    }
+
+    &-disapear {
+        position: initial;
+        visibility: visible;
+        pointer-events: all;
+
+        @include breakpoint.breakpoint(small-only) {
+            position: absolute;
+            visibility: hidden;
+            pointer-events: none;
+        }
+    }
+}

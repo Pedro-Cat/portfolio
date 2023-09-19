@@ -1,0 +1,23 @@
+.c-email {
+    color: white;
+    font-size: 120%;
+    opacity: 0.6;
+    cursor: pointer;
+
+    &:hover {
+        scale: 1.05;
+        opacity: 1;
+
+        .c-email__tag {
+            
+        }
+    }
+
+    &__tag {
+        color: black;
+        background-color: white;
+        white-space: nowrap;
+        font-size: initial;
+        border-radius: 10px;
+    }
+}
