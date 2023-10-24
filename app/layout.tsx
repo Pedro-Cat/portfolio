@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* add no futuro? */}
+      {/* Future addition? */}
       {/* <Script src='../vendor/cut.js' strategy='lazyOnload' /> */}
       <Script src='../vendor/scroll.js' strategy='lazyOnload' />
       <body className='l-wrapper c-wrapper'>{children}</body>

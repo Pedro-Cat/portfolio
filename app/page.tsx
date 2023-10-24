@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Github, Linkedin, Rewind } from 'lucide-react'
+import { Github, Linkedin } from 'lucide-react'
 import { copyClick, copyOut } from './copy'
 
 export default function Home() {
@@ -69,13 +69,14 @@ export default function Home() {
                 <div className='l-section__title c-section__title'>
                   Academic Papers:
                 </div>
-                <div className='l-section__project c-section__project'>
+                <div className='l-section__project c-section__project u-cursor-default'>
                   <div className='l-section__image c-img c-img--background-gray'>
                     <Image src={'/cnn-meters-project.png'} fill alt='image' className='u-gradient--top-bottom' />
                   </div>
                   <div className="l-section__info">
                     <div className="l-section__title c-section__title u-font--small">
                       CEGAS-AMR: A Dataset and Application for Automatic Gas Meter Reading using CNN
+                      <br /> - Coming Soon -
                     </div>
                   </div>
                 </div>
@@ -97,10 +98,6 @@ export default function Home() {
               </div>
             </section>
 
-            {/* <section className='l-section l-section--background c-img c-img--background-gray'>
-              <Image src={'/blossom-background.png'} fill alt='bg' className='u-gradient--top-bottom' />
-            </section> */}
-
             <section className='l-section'>
               <div id='contact' className='l-contact__anchor' />
               <div className='l-text c-text'>
@@ -112,7 +109,7 @@ export default function Home() {
                   <div className='l-email c-email' onClick={copyClick} onMouseOut={copyOut}>
                     pcatundarocha@gmail.com
                     <div className='l-email__tag c-email__tag'>
-                      Loading JS...
+                      Click to Copy!
                     </div>
                   </div>
                   <div className='u-gap u-gap--large'>
@@ -142,7 +139,7 @@ export default function Home() {
 
         <footer className='l-footer'>
           <div className='l-footer__container'>
-            footer
+            {/* Footer placeholder */}
           </div>
         </footer>
       </div>
